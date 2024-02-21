@@ -1,6 +1,6 @@
 <template>
   <Splitter
-    :style="{ height: '340px' }"
+    :style="{ height: '100%' }"
     :panes="horizontalPanes"
     :orientation="'horizontal'"
     @change="onHorizontalChange"

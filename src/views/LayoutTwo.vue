@@ -1,9 +1,12 @@
 <template>
+  <button @click="hidePaneLeft = !hidePaneLeft">
+    {{ hidePaneLeft ? "Show" : "Hide" }} Left Panel
+  </button>
   <button @click="hidePaneRight = !hidePaneRight">
     {{ hidePaneRight ? "Show" : "Hide" }} Right Panel
   </button>
   <splitpanes class="default-theme" style="height: calc(100vh - 111px)">
-    <pane>
+    <pane v-if="!hidePaneLeft">
       <span>1</span>
     </pane>
     <pane>
@@ -25,6 +28,7 @@ export default defineComponent({
   components: { Splitpanes, Pane },
   data() {
     return {
+      hidePaneLeft: false, // Initially Left Panel is visible
       hidePaneRight: false, // Initially Right Panel is visible
     }
   }

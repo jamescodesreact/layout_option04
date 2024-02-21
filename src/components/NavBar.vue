@@ -11,7 +11,8 @@
     <nav>
       <router-link to="/">Layout One</router-link> |
       <router-link to="/layout-two">Layout Two</router-link> |
-      <router-link to="/layout-three">Layout Three</router-link>
+      <router-link to="/layout-three">Layout Three</router-link> |
+      <router-link to="/layout-four">Layout Four</router-link>
     </nav>
   </div>
 </template>

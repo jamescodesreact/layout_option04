@@ -1,8 +1,6 @@
 <template>
-  <div class="main-container">
-    <NavBar />
-    <router-view />
-  </div>
+  <NavBar />
+  <router-view />
 </template>
 
 <style lang="scss">
